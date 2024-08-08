@@ -1,0 +1,217 @@
+{
+  // Add custom css
+  "vscode_custom_css.imports": [
+    "file:///E:/OneDrive/ICT/Configuraties/vscode/custom-vscode.css", // TODO: change to public path - royduinkerken.nl
+  ],
+
+    // Organize imports on save
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+
+    // Don't automatically create aliases when refactoring code which is exported.
+    "javascript.preferences.useAliasesForRenames": false,
+    "typescript.preferences.useAliasesForRenames": false,
+
+    // Formatting
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[css]": {
+      "editor.defaultFormatter": "aeschli.vscode-css-formatter"
+    },
+    "prettier.enableDebugLogs": true,
+    "prettier.requireConfig": true,
+    
+    "[html]": {
+      "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[python]": {
+      "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "php.format.rules.arrayInitializersAlignKeyValuePairs": true,
+
+    // Git
+    "git.openRepositoryInParentFolders": "always",
+    "git.confirmSync": false,
+    "git.autofetch": true,
+    "git.ignoreRebaseWarning": true,
+    "github.copilot.enable": {
+      "*": true,
+      "plaintext": false,
+      "markdown": false,
+      "scminput": false
+    },
+    "github.copilot.editor.enableAutoCompletions": true,
+    "githubPullRequests.pullBranch": "never",
+
+    // Highlight all occurrences of a selected word
+    "editor.renderLineHighlight": "all", 
+
+    // Automatically update imports when a file is moved
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+
+    // Enable inline code suggestions
+    "editor.inlineSuggest.enabled": true,
+
+    // Always trust untrusted files
+    "security.workspace.trust.untrustedFiles": "open",
+    
+    // Cursor in editor
+    "editor.cursorBlinking": "solid",
+    "editor.cursorStyle": "line",
+
+    "editor.guides.bracketPairs": "active",
+    "workbench.startupEditor": "none",
+    "editor.detectIndentation": true,
+    "editor.dragAndDrop": false,
+    "editor.tabSize": 2,
+    "editor.foldingImportsByDefault": true,
+    "liveServer.settings.donotVerifyTags": true,
+    "editor.fontSize": 17,
+    "editor.fontWeight": "400",
+    "editor.fontFamily": "'JetBrains Mono', Consolas, 'Courier New', monospace",
+    "editor.smoothScrolling": true,
+    "workbench.colorCustomizations": {
+      "terminal.background": "#090300cc",
+      "terminal.foreground": "#A5A2A2",
+      "terminalCursor.background": "#A5A2A2",
+      "terminalCursor.foreground": "#A5A2A2",
+      "terminal.ansiBlack": "#090300",
+      "terminal.ansiBlue": "#01A0E4",
+      "terminal.ansiBrightBlack": "#5C5855",
+      "terminal.ansiBrightBlue": "#01A0E4",
+      "terminal.ansiBrightCyan": "#B5E4F4",
+      "terminal.ansiBrightGreen": "#01A252",
+      "terminal.ansiBrightMagenta": "#A16A94",
+      "terminal.ansiBrightRed": "#DB2D20",
+      "terminal.ansiBrightWhite": "#F7F7F7",
+      "terminal.ansiBrightYellow": "#6202fd",
+      "terminal.ansiCyan": "#B5E4F4",
+      "terminal.ansiGreen": "#01A252",
+      "terminal.ansiMagenta": "#A16A94",
+      "terminal.ansiRed": "#DB2D20",
+      "terminal.ansiWhite": "#A5A2A2",
+      "terminal.ansiYellow": "#FDED02",
+      "editor.lineHighlightBackground": "#2c3e50",
+      "titleBar.activeForeground": "#A5A2A2",
+      "editorWidget.foreground": "#ffffff",
+      "editorWidget.background": "#2c3e50",
+      "editorWidget.border": "#ffffff",
+      "editorSuggestWidget.background": "#2c3e50",
+      "statusBar.background": "#005f5f",
+      "statusBar.noFolderBackground": "#005f5f",
+      "statusBar.debuggingBackground": "#005f5f",
+      "statusBar.foreground": "#ffffff",
+      "statusBar.debuggingForeground": "#ffffff"
+    },
+    "terminal.integrated.defaultProfile.windows": "Windows PowerShell",
+    "terminal.integrated.profiles.windows": {
+      "PowerShell": {
+        "source": "PowerShell",
+        "icon": "terminal-powershell"
+      },
+      "Command Prompt": {
+        "path": [
+          "${env:windir}\\Sysnative\\cmd.exe",
+          "${env:windir}\\System32\\cmd.exe"
+        ],
+        "args": [],
+        "icon": "terminal-cmd"
+      },
+      "Git Bash": {
+        "source": "Git Bash"
+      },
+      "Windows PowerShell": {
+        "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+      }
+    },
+    "fiveServer.php.executable": "C:/xampp/php/php.exe",
+    "fiveServer.php.ini": "C:/xampp/php.ini",
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "todo-tree.general.showActivityBarBadge": true, // show todo count in activity bar (left side of screen)
+    "editor.minimap.enabled": false,
+    "workbench.layoutControl.enabled": false,
+    "terminal.integrated.fontFamily": "Hack Nerd Font Mono",
+    "terminal.integrated.fontWeight": "600",
+    "terminal.integrated.fontSize": 13,
+    "explorer.copyRelativePathSeparator": "/",
+    "polacode.transparentBackground": true,
+    "window.titleBarStyle": "custom",
+    "editor.tokenColorCustomizations": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment",
+            "comment.block.documentation"
+          ],
+          "settings": {
+            "foreground": "#ff0000"
+          }
+        },
+        {
+          "scope": [
+            "variable.other.readwrite.unused",
+            "meta.import.ts unused"
+          ],
+          "settings": {
+            "foreground": "#d811ea"
+          }
+        },
+        {
+          "scope": [
+            "comment",
+            "comment.block.documentation"
+          ],
+          "settings": {
+            "foreground": "#ff0000"
+          }
+        },
+        {
+          "scope": [
+            "variable.other.readwrite.unused",
+            "meta.import.ts unused"
+          ],
+          "settings": {
+            "foreground": "#d811ea"
+          }
+        }
+      ]
+    },
+    // VIM
+    "vim.cursorStylePerMode.insert": "line",
+    "vim.cursorStylePerMode.visual": "line",
+    "vim.cursorStylePerMode.replace": "line",
+    "vim.cursorStylePerMode.normal": "block-outline",
+    "vim.cursorStylePerMode.visualblock": "line",
+    "vim.cursorStylePerMode.visualline": "line",
+    "vim.highlightedyank.enable": true,
+    "vim.hlsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.replaceWithRegister": true,
+    "vim.smartRelativeLine": true,
+    "vim.statusBarColorControl": true,
+
+    // Projectmanager extension
+    "projectManager.git.baseFolders": [
+        "C:\\GitHub"
+      ],
+
+    "liveServer.settings.donotShowInfoMsg": true,
+  "accessibility.dimUnfocused.opacity": 1,
+  "scm.repositories.visible": 0,
+  "accessibility.signals.terminalBell": {
+    "sound": "on"
+  },
+  "terminal.integrated.enableVisualBell": true,
+  "workbench.editorAssociations": {
+    "*.docx": "docxreader.docxEditor"
+  },
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.colorTheme": "GitHub Dark",
+  }

@@ -1,0 +1,43 @@
+[user]
+email = Duinkerkenroy1123@gmail.com
+name = RoyDuinkerken123
+
+[alias]
+statusnum = !"C:/Users/Duink/git-custom-commands.sh" statusnum
+addnum = !"C:/Users/Duink/git-custom-commands.sh" addnumber
+restorenum = !"C:/Users/Duink/git-custom-commands.sh" restorenum
+resetnum = !"C:/Users/Duink/git-custom-commands.sh" resetnum
+diffnum = !"C:/Users/Duink/git-custom-commands.sh" diffnum
+
+# command to start editting your .gitconfig file
+viewconfig= "!git config --global --edit"
+
+# amend while without changing commit message
+	amend = commit --amend --no-edit
+
+# show splitscreen diff of file
+diffs = difftool -y
+aliasses = config --get-regexp alias
+
+# view branch history + commits made on that branch + author + date
+bh = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(contents:subject) %(color:green)(%(committerdate:relative)) [%(authorname)]' --sort=-committerdate
+
+# undo local work - except untracked files
+undolocal = reset --hard HEAD
+
+# some basic configuration thingies
+[color]
+status = auto
+ui = true
+
+[push]
+default = current
+
+[pull]
+rebase = true
+
+[help]
+autocorrect = 1
+
+[init]
+defaultBranch = main

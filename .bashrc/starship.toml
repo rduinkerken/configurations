@@ -1,0 +1,146 @@
+
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+add_newline = false
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[directory]
+style = "bold cyan"
+truncation_length = 999
+
+[git_branch]
+style = "bold purple"
+
+[bun]
+format = ""
+
+[buf]
+format = ""
+
+[cmake]
+format = ""
+
+[cobol]
+format = ""
+
+[crystal]
+format = ""
+
+[daml]
+format = ""
+
+[dart]
+format = ""
+
+[deno]
+format = ""
+
+[dotnet]
+format = ""
+
+[elixir]
+format = ''
+
+[elm]
+format = ''
+
+[erlang]
+format = ''
+
+[fennel]
+format = ''
+
+[golang]
+format = ''
+
+[gradle]
+format = ''
+
+[haxe]
+format = ''
+
+[helm]
+format = ''
+
+[java]
+format = ''
+
+[julia]
+format = ''
+
+[kotlin]
+format = ''
+
+[lua]
+format = ''
+
+[meson]
+format = ''
+
+[nim]
+format = ''
+
+[nodejs]
+format = ''
+
+[ocaml]
+format = ''
+
+[opa]
+format = ''
+
+[perl]
+format = ''
+
+[php]
+format = ''
+
+[pulumi]
+format = ''
+
+[purescript]
+format = ''
+
+[python]
+format = ''
+
+[raku]
+format = ''
+
+[red]
+format = ''
+
+[rlang]
+format = ''
+
+[ruby]
+format = ''
+
+[rust]
+format = ''
+
+[solidity]
+format = ''
+
+[typst]
+format = ''
+
+[swift]
+format = ''
+
+[vagrant]
+format = ''
+
+[vlang]
+format = ''
+
+[zig]
+format = ''
