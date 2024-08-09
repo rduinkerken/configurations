@@ -13,7 +13,10 @@ diffnum = !"C:/Users/Duink/git-custom-commands.sh" diffnum
 viewconfig= "!git config --global --edit"
 
 # amend while without changing commit message
-	amend = commit --amend --no-edit
+amend = commit --amend --no-edit
+
+# select menu branch checkout - requires fuzzyfinder
+co = !git checkout $(git branch --sort=-committerdate | fzf)
 
 # show splitscreen diff of file
 diffs = difftool -y
