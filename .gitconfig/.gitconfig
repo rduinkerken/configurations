@@ -1,13 +1,14 @@
 [user]
+# ======== CHANGE THIS TO YOUR OWN INFORMATION ======= #
 email = Duinkerkenroy1123@gmail.com
-name = rduinkerken
+name = Roy Duinkerken
 
 [alias]
-statusnum = !"C:/Users/Duink/git-custom-commands.sh" statusnum
-addnum = !"C:/Users/Duink/git-custom-commands.sh" addnumber
-restorenum = !"C:/Users/Duink/git-custom-commands.sh" restorenum
-resetnum = !"C:/Users/Duink/git-custom-commands.sh" resetnum
-diffnum = !"C:/Users/Duink/git-custom-commands.sh" diffnum
+statusnum = !"git-custom-commands.sh" statusnum
+addnum = !"git-custom-commands.sh" addnumber
+restorenum = !"git-custom-commands.sh" restorenum
+resetnum = !"git-custom-commands.sh" resetnum
+diffnum = !"git-custom-commands.sh" diffnum
 
 # command to start editting your .gitconfig file
 viewconfig= "!git config --global --edit"
@@ -15,10 +16,16 @@ viewconfig= "!git config --global --edit"
 # amend while without changing commit message
 amend = commit --amend --no-edit
 
+# shorthand for status
+st = status
+
 # select menu branch checkout - requires fuzzyfinder
 co = !git checkout $(git branch --sort=-committerdate | fzf)
 
-# show splitscreen diff of file
+# allows adding files using fuzzy finder selection
+fadd = "!git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o git add"
+
+# show splitscreen diff of file - might still be a bit buggy
 diffs = difftool -y
 aliasses = config --get-regexp alias
 
@@ -28,7 +35,7 @@ bh = branch --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(
 # undo local work - except untracked files
 undolocal = reset --hard HEAD
 
-# some basic configuration thingies
+# ===== Basic Configurations ===== #
 [color]
 status = auto
 ui = true
@@ -40,7 +47,7 @@ default = current
 rebase = true
 
 [help]
-autocorrect = 1
+autocorrect = 0 # please dont give git the opportunity to catastrophically destroy your masterworks.
 
 [init]
 defaultBranch = main
