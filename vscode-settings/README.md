@@ -2,6 +2,8 @@
 
 This repository contains my personal Visual Studio Code settings.
 
-Feel free to copy! :)
+Feel free to copy!
 
-(some settings wont work on your device, you have to change some local paths)
+I actually recommend you to synchronize your settings by logging into VSCode...
+
+I'm highly certain my VSCode settings on GitHub will be outdated by the time you are reading this ;)

@@ -1,3 +1,12 @@
+(note)
+
+By the time you are reading this. I have (kinda) given up on configuring VIM from scratch.
+I am now using VIM inside my VSCode using the VIM emulator extension.
+
+Maybe I will get back to this configuration in the future.
+
+But anyways, feel free to have a look around.
+
 # What is inside this repository?
 
 This repository contains my .vimrc
@@ -53,7 +62,6 @@ Run in Powershell to install Vim-Plug (Plugin manager)
     `:PlugInstall`
 
 ### Current in-use PlugIns
-
     - ervandew/supertab
     - dracula/vim
     - junegunn/fzf

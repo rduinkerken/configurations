@@ -4,7 +4,7 @@ This repository contains my git configurations.
 
 These configurations will help me be more efficient executing git commands.
 
-Feel free to use it and become more lazy! =)
+Feel free to use it and become as lazy as me =)
 
 ---
 
@@ -22,6 +22,8 @@ Feel free to use it and become more lazy! =)
 ---
 
 ## Commands
+
+(lazy, might not contain every command)
 
 ### `git statusnum`
   - Performs the cheeky `git status` but adds a number in front of the file.
