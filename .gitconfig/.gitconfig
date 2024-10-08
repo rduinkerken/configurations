@@ -25,6 +25,12 @@ co = !git checkout $(git branch --sort=-committerdate | fzf)
 # allows adding files using fuzzy finder selection
 fadd = "!git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o git add"
 
+# allows restoring files using fuzzy finder selection
+frestore = "!git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o git restore"
+
+# allows cleaning up files using fuzzy finder selection
+fclean = "!git ls-files -m -o --exclude-standard | fzf --print0 -m | xargs -0 -t -o rm"
+
 # show splitscreen diff of file - might still be a bit buggy
 diffs = difftool -y
 aliasses = config --get-regexp alias
