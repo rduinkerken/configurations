@@ -4,12 +4,6 @@ email = Duinkerkenroy1123@gmail.com
 name = Roy Duinkerken
 
 [alias]
-statusnum = !"git-custom-commands.sh" statusnum
-addnum = !"git-custom-commands.sh" addnumber
-restorenum = !"git-custom-commands.sh" restorenum
-resetnum = !"git-custom-commands.sh" resetnum
-diffnum = !"git-custom-commands.sh" diffnum
-
 # command to start editting your .gitconfig file
 viewconfig= "!git config --global --edit"
 
